@@ -1,3 +1,7 @@
-public abstract class Rectangular extends Shape {
-}
+import java.awt.*;
 
+public class Rectangular extends Shape {
+
+    void draw(Graphics graphics) {
+    }
+}

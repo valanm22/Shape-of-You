@@ -4,7 +4,7 @@ import java.awt.Graphics;
 public abstract class Shape extends Rectangle {
 
     private String colorOfShape;
-    private String natureOfShape;
+    private boolean isHollow;
     private static int countOfShapes;
 
     abstract void draw(Graphics graphics);
