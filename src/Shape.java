@@ -7,5 +7,9 @@ public abstract class Shape extends Rectangle {
     private boolean isHollow;
     private static int countOfShapes;
 
-    abstract void draw(Graphics graphics);
+    public void setColorOfShape(String colorOfShape) {
+        this.colorOfShape = colorOfShape;
+    }
+
+    public abstract void draw(Graphics graphics);
 }
