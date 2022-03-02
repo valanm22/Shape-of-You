@@ -2,6 +2,10 @@ import java.awt.*;
 
 public class Rectangular extends Shape {
 
-    public void draw(Graphics graphics) {
+    public Rectangular(Rectangle r, Color color, String nature) {
+        super(r, color, nature);
+    }
+
+    public void draw(Graphics g) {
     }
 }

@@ -2,6 +2,10 @@ import java.awt.*;
 
 public  class Oval extends Shape {
 
-    public void draw(Graphics graphics){
+    public Oval(Rectangle r, Color color, String nature) {
+        super(r, color, nature);
+    }
+
+    public void draw(Graphics g){
     }
 }

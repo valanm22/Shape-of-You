@@ -1,15 +1,29 @@
-import java.awt.Rectangle;
-import java.awt.Graphics;
+import java.awt.*;
 
 public abstract class Shape extends Rectangle {
 
-    private String colorOfShape;
-    private boolean isHollow;
-    private static int countOfShapes;
+    private Color color;
+    private String nature;
+    private static int count;
 
-    public void setColorOfShape(String colorOfShape) {
-        this.colorOfShape = colorOfShape;
+    public Shape(Rectangle r, Color color, String nature) {
+        super(r);
+        this.color = color;
+        this.nature = nature;
+        count++;
     }
 
-    public abstract void draw(Graphics graphics);
+    public void setColor(Graphics g) {
+        color = g.getColor();
+    }
+
+    public String getSolid() {
+        return nature;
+    }
+
+    public static int getNoOfShapes() {
+        return count;
+    }
+
+    public abstract void draw(Graphics g);
 }
